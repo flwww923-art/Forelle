@@ -386,3 +386,13 @@ footer {
     color: #777;
     font-size: 13px;
 }
+/* ضبط حجم صور المنتجات لتصبح متناسقة وعادية */
+.product-card img, 
+img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
