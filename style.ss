@@ -1,4 +1,3 @@
-
 /* إعدادات عامة وتثبيت الخط */
 * {
     margin: 0;
@@ -34,7 +33,7 @@ body {
 .navbar .logo {
     font-size: 28px;
     font-weight: 900;
-    color: #d4af37; /* لون ذهبي فخم */
+    color: #d4af37;
     letter-spacing: 2px;
 }
 
@@ -226,6 +225,7 @@ body {
 }
 
 .product-card:hover {
+    transform: translateY(-50px);
     transform: translateY(-5px);
 }
 
@@ -280,7 +280,7 @@ body {
     background-color: #20ba5a;
 }
 
-/* قسم من نحن */
+/* قسم من نحن والصورة المصغرة */
 .about-section {
     padding: 90px 8%;
     background-color: #fff;
@@ -332,15 +332,20 @@ body {
 .about-image {
     flex: 1;
     min-width: 300px;
-    height: 400px;
-    border-radius: 15px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* تعديل وتصغير الصورة الكبيرة لتصبح بحجم مناسب ومنسق */
 .about-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 380px; /* يمكنك تقليص هذا الرقم لتصغير الصورة أكثر */
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* لضمان عدم قص أطراف الصورة */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* الفوتر */
@@ -386,25 +391,4 @@ footer {
     text-align: center;
     color: #777;
     font-size: 13px;
-}
-/* ضبط حجم صور المنتجات لتصبح متناسقة وعادية */
-.product-card img, 
-img {
-    max-width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
-}
-/* فرض حجم صغير وموحد على جميع صور المنتجات في المتجر */
-img {
-    max-width: 150px !important;
-    max-height: 150px !important;
-    width: 100% !important;
-    height: auto !important;
-    object-fit: cover !important;
-    display: block !important;
-    margin: 10px auto !important;
-    border-radius: 6px !important;
 }
