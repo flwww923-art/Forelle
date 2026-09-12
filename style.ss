@@ -397,3 +397,14 @@ img {
     display: block;
     margin: 0 auto;
 }
+/* فرض حجم صغير وموحد على جميع صور المنتجات في المتجر */
+img {
+    max-width: 150px !important;
+    max-height: 150px !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 10px auto !important;
+    border-radius: 6px !important;
+}
