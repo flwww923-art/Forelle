@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forelle - متجر الحقائب والأزياء النسائية الراقية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر وشريط التنقل -->
+    <header class="navbar">
+        <div class="logo">Forelle</div>
+        <nav class="nav-links">
+            <a href="#hero">الرئيسية</a>
+            <a href="#features">مميزاتنا</a>
+            <a href="#products">المنتجات</a>
+            <a href="#about">من نحن</a>
+            <a href="admin.html" class="admin-link"><i class="fa-solid fa-lock"></i></a>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) مع خلفية فخمة ورحبة -->
+    <section id="hero" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;">
+        <div class="hero-content">
+            <span class="badge">أهلاً بكِ في عالم الأناقة والتميز</span>
+            <h1 class="store-title">Forelle</h1>
+            <p class="welcome-text">حيث يلتقي الذوق الراقي بالموضة العصرية. اكتشفي تشكيلتنا الحصرية من أجمل الحقائب والأزياء النسائية التي صُنعت خصيصاً لتناسب إطلالتك الفريدة في كل المناسبات.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">اكتشفي التشكيلة</a>
+                <a href="https://wa.me/213798555097?text=مرحباً، أود الاستفسار عن منتجات متجر Forelle" target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مميزات المتجر (لجعل الصفحة أطول وأكثر احترافية) -->
+    <section id="features" class="features-section">
+        <div class="section-title">
+            <h2>لماذا تختارين Forelle؟</h2>
+            <p>نحرص على تقديم الأفضل لكِ دائماً</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-gem"></i>
+                <h3>جودة عالية وفخامة</h3>
+                <p>نختار لكِ أرقى التصميمات والخامات التي تمنحكِ إطلالة ساحرة ومميزة.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3>تشكيلة متجددة</h3>
+                <p>متابعة مستدامة لأحدث صيحات الموضة العالمية في الحقائب والأزياء النسائية.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>خدمة وتوصيل سريع</h3>
+                <p>تواصل سهل ومباشر عبر الواتساب مع خدمة عملاء جاهزة للإجابة على كل طلباتك.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عرض المنتجات -->
+    <section id="products" class="products-section">
+        <div class="section-title">
+            <h2>أحدث المنتجات المتوفرة</h2>
+            <p>اختاري ما يكمل أناقتكِ اليوم</p>
+        </div>
+        
+        <!-- سيتم جلب المنتجات تلقائياً من قاعدة البيانات عبر script.js -->
+        <div id="products-grid" class="products-grid">
+            <!-- مثال لشكل المنتج الافتراضي قبل الاتصال بالقاعدة -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="حقيبة نسائية فاخرة">
+                </div>
+                <div class="product-info">
+                    <h3>حقيبة نسائية كلاسيكية</h3>
+                    <p class="price">4,500 دج</p>
+                    <a href="https://wa.me/213798555097?text=مرحباً، أود طلب هذه الحقيبة: حقيبة نسائية كلاسيكية" target="_blank" class="buy-btn">
+                        <i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن (نبذة عن المتجر في تيزي وزو) -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>عن متجر Forelle</h2>
+                <p>يقع متجرنا في قلب مدينة تيزي وزو وتحديداً في شارع كريم بلقاسم الشهير. نحن نؤمن بأن الأناقة هي انعكاس لشخصيتكِ، لذا نضع بين أيديكم تشكيلة مختارة بعناية من الحقائب والأزياء النسائية التي تجمع بين العملية والجاذبية العصرية.</p>
+                <p>يسعدنا دائماً استقبالكم في المحل أو خدمتكم أينما كنتم عبر طلبات الواتساب السريعة.</p>
+                <div class="store-stats">
+                    <div class="stat-item">
+                        <h3>4.8 ★</h3>
+                        <p>تقييم الزبائن</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>جودة مضمونة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop" alt="متجر Forelle">
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (معلومات المتجر كاملة) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box">
+                <h3>Forelle</h3>
+                <p>وجهتك الأولى للأزياء والحقائب النسائية الراقية في تيزي وزو.</p>
+            </div>
+            <div class="footer-box">
+                <h3>معلومات الاتصال</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Bd Krim Belkacem, Tizi Ouzou</p>
+                <p><i class="fa-solid fa-phone"></i> 0798 55 50 97</p>
+                <p><i class="fa-brands fa-instagram"></i> instagram.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة &copy; 2026 Forelle</p>
+        </div>
+    </footer>
+
+    <script src="supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
